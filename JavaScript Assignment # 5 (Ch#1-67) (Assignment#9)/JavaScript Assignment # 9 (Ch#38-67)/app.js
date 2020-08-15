@@ -479,39 +479,46 @@
 // }
 
 // function edit_row(row){
+//     // "row.parentNode.parentNode" gives full row <tr></tr>
 //     var row_edit = row.parentNode.parentNode;
 
+//     // the row parameter is the edit button and its next sibling is save button
 //     row.style.display="none";
 //     row.nextSibling.style.display="inline";
 
 //     // document.getElementById("editBtn").style.display="none";
 //     // document.getElementById("saveBtn").style.display="inline";
 
+//     // the  "row_edit.childNodes[1].innerHTML" is the name of student and  "row_edit.childNodes[2].innerHTML" is the class of student
 //     var student_Name = row_edit.childNodes[1].innerHTML
 //     var student_Class = row_edit.childNodes[2].innerHTML
 
+//     // this line puts the input field along with old student name to be edited and overrite on the student name
 //     row_edit.childNodes[1].innerHTML = "<input type='text'  value='" + student_Name + "'>";
 //     row_edit.childNodes[2].innerHTML = "<input type='text'  value='" + student_Class + "'>";
 
-
-
 // }
 
+
 // function save_row(row){
+
+//     // "row.parentNode.parentNode" gives full row <tr></tr>
 //     var row_edit = row.parentNode.parentNode;
 
+//     // the row parameter is the save button and its previuos sibling is edit button
 //     row.style.display="none";
 //     row.previousSibling.style.display="inline";
 
 //     // document.getElementById("editBtn").style.display="inline";
 //     // document.getElementById("saveBtn").style.display="none";
 
+//     // the  "row_edit.childNodes[1].firstChild.value" is the name of student in input filed and  "row_edit.childNodes[2].firstChild.value" is the class of student in input field
 //     var student_Name = row_edit.childNodes[1].firstChild.value
 //     var student_Class = row_edit.childNodes[2].firstChild.value
 
+//     // this line puts the edited student name from input field and overrite on the input field
 //     row_edit.childNodes[1].innerHTML = student_Name
 //     row_edit.childNodes[2].innerHTML = student_Class
-
 
 // }
 
